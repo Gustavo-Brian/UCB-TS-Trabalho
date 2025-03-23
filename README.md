@@ -8,7 +8,7 @@
 
 <h4>MySQL</h4>
 
-Crie um banco de dados no MySQL (sem tabelas) e configure as propriedades de conexão.
+Crie um banco de dados no MySQL (sem tabelas).
 
 <h2>🚀 Como Rodar o Projeto</h2>
 
