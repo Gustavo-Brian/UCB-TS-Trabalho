@@ -1,2 +1,22 @@
-# UCB-Trabalho-Teste-Software
-Trabalho acadêmico com o objetivo de viabilizar a execução e análise de testes de software.
+Trabalho-Final-Teste-de-Software
+🛠 Pré-requisitos Antes de rodar o projeto, certifique-se de ter instalado:
+
+Java 17+ (ou a versão suportada pelo projeto)
+
+Maven 3+
+
+(Opcional) Banco de dados específico, como MySQL, PostgreSQL, etc.
+
+🚀 Como Rodar o Projeto
+
+1️⃣ Clone o repositório
+
+git clone https://github.com/seu-usuario/seu-repositorio.git cd seu-repositorio
+
+2️⃣ Configuração Configure o arquivo application.properties: spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco spring.datasource.username=username spring.datasource.password=senha server.port=porta
+
+3️⃣ Compilar e Executar 🔹 Usando Maven
+
+mvn clean install mvn spring-boot:run
+
+4️⃣ Acessando a aplicação http://localhost:8080/...
