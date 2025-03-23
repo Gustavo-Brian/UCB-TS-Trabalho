@@ -12,7 +12,8 @@ Maven 3+
 
 1️⃣ Clone o repositório
 
-git clone https://github.com/seu-usuario/seu-repositorio.git cd seu-repositorio
+git clone https://github.com/Gustavo-Brian/UCB-Trabalho-Teste-Software.git
+cd seu-repositorio
 
 2️⃣ Configuração Configure o arquivo application.properties: spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco spring.datasource.username=username spring.datasource.password=senha server.port=porta
 
