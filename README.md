@@ -27,7 +27,8 @@ server.port=porta
 
 <h3>3️⃣ Compilar e Executar</h3>
 
-mvn clean install mvn spring-boot:run
+mvn clean install<br>
+mvn spring-boot:run
 
 <h3>4️⃣ Acessando a aplicação</h3> <br>
 http://localhost:porta/...
