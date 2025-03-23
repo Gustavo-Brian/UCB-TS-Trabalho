@@ -21,7 +21,8 @@ cd seu-repositorio
 <strong>Configure o arquivo application.properties:</strong> <br>
 spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco <br>
 spring.datasource.username=username <br>
-spring.datasource.password=senha server.port=porta
+spring.datasource.password=senha<br>
+server.port=porta
 
 <h3>3️⃣ Compilar e Executar</h3>
 
