@@ -18,7 +18,8 @@ git clone https://github.com/Gustavo-Brian/UCB-Trabalho-Teste-Software.git
 cd seu-repositorio
 
 <h3>2️⃣ Configuração</h3> <br>
-<strong>Configure o arquivo application.properties:</strong> <br>
+<strong>Configure o arquivo application.properties:</strong>
+
 spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco <br>
 spring.datasource.username=username <br>
 spring.datasource.password=senha<br>
