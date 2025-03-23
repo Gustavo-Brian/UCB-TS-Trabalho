@@ -2,30 +2,30 @@
 
 🛠 Pré-requisitos Antes de rodar o projeto, certifique-se de ter instalado:
 
-<h3>Java 17+</h3>
+<h4>Java 17+</h4>
 
-<h3>Maven 3+</h3>
+<h4>Maven 3+</h4>
 
-<h3>MySQL</h3>
+<h4>MySQL</h4>
 
 Crie um banco de dados no MySQL (sem tabelas) e configure as propriedades de conexão.
 
-<h1>🚀 Como Rodar o Projeto</h1>
+<h2>🚀 Como Rodar o Projeto</h2>
 
-<h2>1️⃣ Clone o repositório</h2> <br>
+<h3>1️⃣ Clone o repositório</h3> <br>
 git clone https://github.com/Gustavo-Brian/UCB-Trabalho-Teste-Software.git
 
 cd seu-repositorio
 
-<h2>2️⃣ Configuração</h2> <br>
+<h3>2️⃣ Configuração</h3> <br>
 Configure o arquivo application.properties: <br>
 spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco <br>
 spring.datasource.username=username <br>
 spring.datasource.password=senha server.port=porta
 
-<h2>3️⃣ Compilar e Executar</h2>
+<h3>3️⃣ Compilar e Executar</h3>
 
 mvn clean install mvn spring-boot:run
 
-<h2>4️⃣ Acessando a aplicação</h2> <br>
+<h3>4️⃣ Acessando a aplicação</h3> <br>
 http://localhost:porta/...
