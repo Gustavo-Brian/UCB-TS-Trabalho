@@ -1,5 +1,7 @@
 package com.tf12.trabalho_teste_software.gestao_funcionarios.funcionario.controller;
 
+import java.util.List;
+
 //teste
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,11 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tf12.trabalho_teste_software.gestao_funcionarios.funcionario.dto.request.FuncionarioRequest;
-import com.tf12.trabalho_teste_software.gestao_funcionarios.funcionario.dto.request.DesativarFuncionarioRequest;
+
 import com.tf12.trabalho_teste_software.gestao_funcionarios.funcionario.dto.response.FuncionarioResponse;
-import com.tf12.trabalho_teste_software.gestao_funcionarios.funcionario.dto.response.FuncionariosAtivosResponse;
-import com.tf12.trabalho_teste_software.gestao_funcionarios.funcionario.dto.response.FuncionariosInativosResponse;
-import com.tf12.trabalho_teste_software.gestao_funcionarios.funcionario.dto.response.FuncionariosResponse;
+
 import com.tf12.trabalho_teste_software.gestao_funcionarios.funcionario.service.FuncionarioService;
 
 @RestController
@@ -43,19 +43,19 @@ public class FuncionarioController {
 		return (dto == null) ? ResponseEntity.notFound().build() : ResponseEntity.status(200).body(dto);
 	}
 
-	@GetMapping("/listarFuncionarios")
-	public ResponseEntity<FuncionariosResponse> listarFuncionarios() {
-		return ResponseEntity.status(200).body(service.retornarLista());
+	@GetMapping("/retornarFuncionarios")
+	public ResponseEntity<List<FuncionarioResponse>> retornarFuncionarios() {
+		return ResponseEntity.status(200).body(service.retornarFuncionarios());
 	}
 
-	@GetMapping("/listarFuncionariosAtivos")
-	public ResponseEntity<FuncionariosAtivosResponse> listarFuncionarioAtivos() {
-		return ResponseEntity.status(200).body(service.retornarAtivos());
+	@GetMapping("/retornarFuncionariosAtivos")
+	public ResponseEntity<List<FuncionarioResponse>> RetornarFuncionariosAtivos() {
+		return ResponseEntity.status(200).body(service.retornarFuncionariosAtivos());
 	}
 
-	@GetMapping("/listarFuncionariosInativos")
-	public ResponseEntity<FuncionariosInativosResponse> listarFuncionariosInativos() {
-		return ResponseEntity.status(200).body(service.retornarInativos());
+	@GetMapping("/retornarFuncionariosInativos")
+	public ResponseEntity<List<FuncionarioResponse>> RetornarFuncionariosInativos() {
+		return ResponseEntity.status(200).body(service.retornarFuncionariosInativos());
 	}
 
 	@PutMapping("/desativarFuncionario/{id}")
