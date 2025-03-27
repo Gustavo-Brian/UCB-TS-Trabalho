@@ -1,0 +1,45 @@
+<!-- Concluido, gustavo avaliar e fazer alterações necessarias -->
+ 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de Funcionários</title>
+    <link rel="stylesheet" href="css/gerenciamento_funcionarios.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="left-panel">
+            <h2>Gerenciamento de Funcionários</h2>
+            <p>Visualize e gerencie todos os funcionários cadastrados.</p>
+            <button class="submit-btn" onclick="window.location.href='cadastro_funcionario.html'">Cadastrar Novo Funcionário</button>
+        </div>
+        <div class="right-panel">
+            <h2>Funcionários Cadastrados</h2>
+            <div class="search-filters">
+                <input type="text" id="searchName" placeholder="Buscar por nome" onkeyup="filterTable()">
+                <input type="text" id="searchCPF" placeholder="Buscar por CPF" onkeyup="filterTable()">
+                <input type="text" id="searchCargo" placeholder="Buscar por cargo" onkeyup="filterTable()">
+                <button class="search-btn" onclick="filterTable()">Pesquisar</button>
+            </div>
+            
+            <br>
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Cargo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados dos funcionários serão preenchidos aqui via Node.js -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/gerenciamento_funcionarios.js"></script>
+</body>
+</html>

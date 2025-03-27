@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout principal */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.form-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+}
+
+/* Divisória da esquerda */
+.left-panel {
+    flex: 1;
+    background: #5AB794;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.left-panel h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.left-panel p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.left-panel button {
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.left-panel button:hover {
+    background: white;
+    color: #5AB794;
+}
+
+/* Divisória da direita (formulário de login) */
+.right-panel {
+    flex: 1.5;
+    padding: 40px;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-panel h2 {
+    font-size: 30px;
+    color: #5AB794;
+    margin-bottom: 20px;
+}
+
+/* Filtros de pesquisa */
+.search-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-filters input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-filters input:focus {
+    outline: none;
+    border-color: #5AB794;
+    box-shadow: 0 0 5px rgba(90, 183, 148, 0.5);
+}
+
+/* Ajustando a grid para uma coluna */
+.form {
+    display: grid;
+    grid-template-columns: 1fr; /* uma coluna */
+    gap: 20px; /* Espaço entre os elementos */
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+/* Ajustando os campos */
+.input-group {
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #5AB794;
+    box-shadow: 0 0 5px rgba(90, 183, 148, 0.5);
+}
+
+/* Ajuste para o botão */
+.submit-btn {
+    width: 30%;
+    background-color: #5AB794;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #4a9c7f;
+}
+
+/* Mensagens de erro e sucesso */
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+#success-message {
+    color: green;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-wrapper {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+
+    .right-panel {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form { 
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    /* Filtros de pesquisa em telas menores */
+    .search-filters input {
+        width: 100%;
+    }
+}
+
+/* Estilo para o botão de pesquisa */
+.search-btn {
+    background-color: #5AB794;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #4a9c7f;
+}
+
+/* Estilização da tabela */
+.table-container {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: #5AB794;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e8f5e9;
+}

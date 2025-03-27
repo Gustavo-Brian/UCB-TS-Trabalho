@@ -1,0 +1,50 @@
+<!-- Concluido, gustavo avaliar e fazer alterações necessarias -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Gestão de Funcionários</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="left-panel">
+            <h2>Bem-vindo ao Sistema de Gestão de Funcionários</h2>
+            <p>Digite suas credenciais para acessar sua conta.</p>
+        </div>
+        <div class="right-panel">
+            <h2>Login</h2>
+            <form id="login-form" class="form">
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+                </div>
+                
+                <div class="input-group">
+                    <button type="submit" class="submit-btn">Entrar</button>
+                </div>
+                
+                <div class="input-group">
+                    <a href="recuperar_senha.html">Esqueceu sua senha?</a>
+                </div>
+            </form>
+
+            <div id="error-message"></div>
+            <div id="success-message"></div>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="cadastro_funcionario.html">Cadastre-se aqui</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
