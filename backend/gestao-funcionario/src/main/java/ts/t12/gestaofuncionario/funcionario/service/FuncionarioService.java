@@ -43,7 +43,11 @@ public class FuncionarioService {
         );
     }
 
+<<<<<<< HEAD
+    public ConsultarFuncionarioResponse atualizar(Long id, AtualizarFuncionarioRequest request) {
+=======
     public ConsultarFuncionarioResponse altualizar(Long id, AtualizarFuncionarioRequest request) {
+>>>>>>> 6821171011a635a4f931936bb1d8a61fdb295cf3
         Funcionario funcionario = repository.findById(id).orElse(null);
 
         if(funcionario == null){
@@ -80,4 +84,16 @@ public class FuncionarioService {
 
         return ConsultarFuncionarioResponse.converter(repository.save(funcionario));
     }
+<<<<<<< HEAD
+
+    public boolean deletar(Long id) {
+        if(!repository.existsById(id)){
+            return false;
+        }
+
+        repository.deleteById(id);
+        return true;
+    }
+=======
+>>>>>>> 6821171011a635a4f931936bb1d8a61fdb295cf3
 }
