@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- Define o tipo do documento como HTML5 -->
+<html lang="pt-BR">
+<!-- Define o idioma da página como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8 para suportar acentuação -->
+
+    <title>Perfil do Funcionário</title>
+    <!-- Título da aba do navegador -->
+
+    <link rel="stylesheet" href="/stylesheets/perfil_funcionarios.css">
+    <!-- Importa o arquivo CSS com os estilos personalizados -->
+
+    <link rel="icon" href="/images/img1.jpg" type="image/png">
+    <!-- Define o ícone da aba (favicon) -->
+</head>
+
+<body>
+<!-- Início do corpo da página -->
+
+<div class="logo-container">
+    <!-- Container para exibir o logo da empresa no topo -->
+    <img src="/images/img1.jpg" alt="Logo da Empresa">
+</div>
+
+<h1>Perfil de <%= funcionario.nome %></h1>
+<!-- Título principal com o nome do funcionário vindo da variável EJS -->
+
+<div class="profile-container">
+    <!-- Container principal do perfil com bordas, padding e sombra -->
+
+    <div class="profile-header">
+        <!-- Cabeçalho do perfil: foto + info básicas -->
+
+        <%
+        // Define a foto de perfil com base no gênero
+        let fotoPerfil = funcionario.genero === "Feminino" ? "/images/img4.jpg" : "/images/img5.jpg";
+        %>
+
+        <!-- Div com imagem de perfil (usando CSS inline para carregar imagem de acordo com o gênero) -->
+        <div class="profile-img" style="background: url('<%= fotoPerfil %>') no-repeat center center; background-size: cover;"></div>
+
+        <div class="profile-info">
+            <!-- Informações básicas do funcionário -->
+            <h2>@<%= funcionario.nome.toLowerCase().replace(/ /g, "_") %></h2>
+            <!-- Nome formatado como username estilo Instagram -->
+
+            <span><strong>Cargo:</strong> <%= funcionario.cargo %></span>
+            <span><strong>Status:</strong> <%= funcionario.ativo ? "Ativo" : "Inativo" %></span>
+            <!-- Status de atividade do funcionário -->
+        </div>
+    </div>
+
+    <div class="section">
+        <!-- Seção: Informações Gerais -->
+        <div class="section-title">📄 Informações Gerais</div>
+
+        <div class="info-grid">
+            <!-- Grade de informações com 2 ou mais colunas -->
+            <div class="info-box"><strong>CPF:</strong> <%= funcionario.cpf %></div>
+            <div class="info-box"><strong>Data de Nascimento:</strong> <%= funcionario.dataNascimento %></div>
+            <div class="info-box"><strong>Localidade:</strong> <%= funcionario.localidade %></div>
+            <div class="info-box"><strong>Data de Admissão:</strong> <%= funcionario.dataAdmissao %></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <!-- Seção: Cargo e Turno -->
+        <div class="section-title">💼 Cargo e Turno</div>
+
+        <div class="info-grid">
+            <div class="info-box"><strong>Especialidade:</strong> <%= funcionario.especialidade %></div>
+            <div class="info-box"><strong>Salário:</strong> R$ <%= funcionario.salario %></div>
+            <div class="info-box"><strong>Turno:</strong> <%= funcionario.turno %></div>
+            <div class="info-box"><strong>Horário:</strong> <%= funcionario.horario %></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <!-- Seção: Contato -->
+        <div class="section-title">Contato</div>
+
+        <div class="info-grid">
+            <div class="info-box"><strong>Telefone:</strong> <%= funcionario.contato %></div>
+            <div class="info-box"><strong>Fixo:</strong> <%= funcionario.fixo ? funcionario.fixo : "Não" %></div>
+            <!-- Mostra "Não" se o número fixo for nulo -->
+        </div>
+    </div>
+
+    <div class="section">
+        <!-- Seção: Benefícios -->
+        <div class="section-title">Benefícios</div>
+        <div class="info-box"><%= funcionario.beneficio %></div>
+    </div>
+
+    <div class="section">
+        <!-- Seção: Último Relatório -->
+        <div class="section-title">Último Relatório</div>
+        <div class="info-box"><%= funcionario.ultimoRelatorio %></div>
+    </div>
+</div>
+
+<div class="button-container">
+    <!-- Botão de retorno -->
+    <a href="/funcionario" class="btn">Voltar</a>
+</div>
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil do Funcionário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/perfil_funcionarios.css">
+</head>
+<body>
+<div class="profile-container">
+    <div class="profile-header">
+        <div class="profile-img"></div>
+        <div class="profile-info">
+            <h2>@<%= funcionario.nome %></h2>
+            <span><strong>Cargo:</strong> <%= funcionario.cargo %></span>
+            <span><strong>Status:</strong> <%= funcionario.ativo ? "Ativo" : "Inativo" %></span>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-id-card"></i> Informações Gerais</div>
+        <div class="info-grid">
+            <div class="info-box"><strong>CPF:</strong> <%= funcionario.cpf %></div>
+            <div class="info-box"><strong>Data de Nascimento:</strong> <%= funcionario.dataNascimento %></div>
+            <div class="info-box"><strong>Localidade:</strong> <%= funcionario.localidade %></div>
+            <div class="info-box"><strong>Data de Admissão:</strong> <%= funcionario.dataAdmissao %></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-briefcase"></i> Cargo e Turno</div>
+        <div class="info-grid">
+            <div class="info-box"><strong>Especialidade:</strong> Backend</div>
+            <div class="info-box"><strong>Salário:</strong> R$ 8.000,00</div>
+            <div class="info-box"><strong>Turno:</strong> <%= funcionario.turno %></div>
+            <div class="info-box"><strong>Horário:</strong> 13:00 - 18:00</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-phone"></i> Contato</div>
+        <div class="info-grid">
+            <div class="info-box"><strong>Telefone:</strong> <%= funcionario.contato %></div>
+            <div class="info-box"><strong>Fixo:</strong> Não</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-gift"></i> Benefícios</div>
+        <div class="info-box">
+            <%= funcionario.beneficio %>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-file-alt"></i> Último Relatório</div>
+        <div class="info-box">
+            <%= funcionario.ultimoRelatorio %>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="/funcionario" class="btn">Voltar</a>
+    </div>
+</div>
+</body>
+</html>
+-->

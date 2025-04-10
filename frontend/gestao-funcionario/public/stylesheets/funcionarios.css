@@ -1,0 +1,81 @@
+/* Estilo geralroutes do body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container do logo no topo */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 80px;
+    height: auto;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Tabela de funcionários */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho e células */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+/* Cabeçalho da tabela */
+thead {
+    background-color: darkcyan;
+    color: white;
+}
+
+/* Linhas alternadas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Botão */
+.button-container {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Ícone dentro do botão de ação */
+.btn .icon-action {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+/* Hover no botão com ícone */
+.btn:hover .icon-action {
+    transform: scale(1.1);
+}
