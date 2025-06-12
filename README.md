@@ -1,5 +1,7 @@
 # Trabalho Acadêmico - EM PRODUÇÃO
 
+## Gerenciador de Funcionários
+
 ### 📝 Descrição do Projeto
 
 Este projeto foi desenvolvido com o objetivo de criar e testar um sistema web voltado à **gestão de funcionários**, especialmente para pequenas e médias empresas. Utilizando tecnologias como **Java (Spring Boot)**, **React** e **MySQL**, a aplicação permite o **cadastro, edição, visualização e exclusão de dados** dos colaboradores, integrando funcionalidades modernas com um plano de testes bem definido. A proposta busca **automatizar processos manuais**, melhorar a **eficiência operacional** e garantir **segurança, usabilidade e confiabilidade** nas informações gerenciadas por equipes de **Recursos Humanos**, **gestores** e **administradores**.
