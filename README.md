@@ -26,48 +26,51 @@
 <a href="https://dev.mysql.com/downloads/file/?id=541637" target="_blank" rel="noopener noreferrer">https://dev.mysql.com/downloads/file/?id=541637</a></p>
 <p>Durante a instalação, defina um usuário e uma senha de acesso. Guarde essas informações, pois você precisará utilizá-las na configuração do projeto.</p>
 
-<h4>💻 Criando o banco de dados via terminal</h4>
-<p>Após instalar o MySQL (utilizando o instalador completo recomendado), você precisará criar o banco de dados que o sistema irá usar. Para isso, siga os passos abaixo com atenção:</p>
+<h3>💻 Criando o banco de dados via terminal</h3>
 
-<ol>
-  <li>Abra o <strong>Prompt de Comando</strong> ou <strong>PowerShell</strong> no Windows.</li>
-  <li>Se o comando <code>mysql</code> não for reconhecido, veja a seção <em>"Adicionando o MySQL ao PATH"</em> abaixo.</li>
-  <li>Conecte-se ao servidor MySQL utilizando o cliente de linha de comando, digitando:</li>
-</ol>
+<p>Após instalar o MySQL (utilizando o instalador completo recomendado), você precisará criar o banco de dados que o sistema usará. Siga os passos abaixo com atenção:</p>
+
+<h4>1️⃣ Tente acessar o MySQL via terminal</h4>
+<p>Abra o Prompt de Comando ou PowerShell no Windows e digite:</p>
 
 <pre><code>mysql -u root -p</code></pre>
 
-<p>Digite a senha que você definiu durante a instalação do MySQL (a senha não aparecerá enquanto digita) e pressione Enter.</p>
+<p>Se o comando funcionar, digite sua senha quando solicitado e pule para a seção <strong>2️⃣ Criando o banco de dados</strong>.</p>
 
-<p>Ao acessar o prompt do MySQL (indicativo <code>mysql&gt;</code>), crie o banco de dados para o projeto substituindo <code>nome_do_banco</code> pelo nome desejado, por exemplo, <code>funcionarios_db</code>:</p>
+<h4>❗ Caso receba o erro abaixo:</h4>
+
+<pre><code>'mysql' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.</code></pre>
+
+<p>Isso significa que o MySQL não está configurado no PATH do sistema, e o terminal não consegue encontrar o comando.</p>
+
+<h4>3️⃣ Adicionando MySQL ao PATH via terminal</h4>
+
+<p>Para resolver isso, execute o seguinte comando no mesmo terminal (atenção ao caminho, adapte caso seu MySQL esteja instalado em outro local):</p>
+
+<pre><code>setx PATH "%PATH%;C:\Program Files\MySQL\MySQL Server 8.0\bin"</code></pre>
+
+<p>Após executar, feche e reabra o terminal para a alteração ter efeito. Em seguida, tente novamente:</p>
+
+<pre><code>mysql -u root -p</code></pre>
+
+<h4>4️⃣ Criando o banco de dados</h4>
+
+<p>Depois de acessar o prompt do MySQL (indicado pelo <code>mysql&gt;</code>), crie o banco que será usado pelo projeto substituindo <code>nome_do_banco</code> pelo nome que desejar:</p>
 
 <pre><code>CREATE DATABASE nome_do_banco;</code></pre>
 
-<p>Para confirmar que o banco foi criado, liste os bancos disponíveis:</p>
+<p>Para conferir se o banco foi criado, execute:</p>
 
 <pre><code>SHOW DATABASES;</code></pre>
 
-<p>Saia do prompt do MySQL digitando:</p>
+<p>Finalize saindo do prompt MySQL com:</p>
 
 <pre><code>EXIT;</code></pre>
 
-<p><strong>Obs.:</strong> Esses comandos funcionam independentemente da pasta onde você está no sistema operacional, pois a conexão com o MySQL é feita via rede local.</p>
+<p>Agora você pode configurar o projeto para usar esse banco, conforme explicado na seção <strong>Configurar o Projeto</strong>.</p>
 
-<h4>🔧 Adicionando o MySQL ao PATH no Windows via terminal</h4>
-<p>Se ao tentar executar <code>mysql -u root -p</code> você receber o erro <em>'mysql' não é reconhecido como um comando interno ou externo'</em>, isso indica que o diretório <code>bin</code> do MySQL não está no PATH do sistema.</p>
-<p>Para adicionar temporariamente o MySQL ao PATH nesta sessão do terminal, faça o seguinte:</p>
-
-<pre><code>REM Substitua o caminho abaixo pelo caminho real da pasta bin do seu MySQL
-set MYSQL_PATH=C:\Program Files\MySQL\MySQL Server 8.0\bin
-
-REM Adicione o MySQL ao PATH para a sessão atual
-set PATH=%PATH%;%MYSQL_PATH%
-
-REM Agora o comando mysql deve funcionar
-mysql -u root -p
-</code></pre>
-
-<p><strong>Importante:</strong> Essa alteração vale apenas para a sessão atual do terminal. Para tornar permanente, é necessário alterar as variáveis de ambiente do Windows via Painel de Controle.</p>
+<hr>
 
 <h3>🚀 Como Rodar o Projeto</h3>
 
