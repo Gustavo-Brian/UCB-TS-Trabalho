@@ -92,7 +92,9 @@ server.port=porta_desejada
 
 <h4>3️⃣ Compilar e Executar o Projeto</h4>
 
-<p>Navegue até a pasta <code>backend</code> do projeto, pois é lá que está localizado o arquivo <code>pom.xml</code>. O Maven precisa estar nesse diretório para reconhecer o projeto e executá-lo corretamente.</p>
+<p>
+Navegue até a pasta <code>backend</code> do projeto, onde está localizado o arquivo <code>pom.xml</code>. É essencial que o terminal esteja apontando para esse diretório, pois o Maven precisa encontrar o arquivo para compilar e executar corretamente a aplicação.
+</p>
 
 <p>No terminal, execute o seguinte comando para acessar a pasta correta (ajuste conforme o caminho do seu projeto):</p>
 
