@@ -93,20 +93,28 @@ server.port=porta_desejada
 <h4>3️⃣ Compilar e Executar o Projeto</h4>
 
 <p>
-Navegue até a pasta <code>backend</code> do projeto, onde está localizado o arquivo <code>pom.xml</code>. É essencial que o terminal esteja apontando para esse diretório, pois o Maven precisa encontrar o arquivo para compilar e executar corretamente a aplicação.
+Navegue até a pasta <code>backend</code> do projeto, onde está localizado o arquivo <code>pom.xml</code>. 
+É essencial que o terminal esteja apontando para esse diretório, pois o Maven precisa encontrar esse arquivo para compilar e executar corretamente a aplicação.
 </p>
 
-<p>No terminal, execute o seguinte comando para acessar a pasta correta (ajuste conforme o caminho do seu projeto):</p>
+<p>No terminal, execute o comando abaixo para acessar a pasta correta (ajuste conforme o caminho do seu projeto):</p>
 
 <pre><code>cd UCB-TS-Trabalho/gerenciador-funcionarios/backend</code></pre>
 
-<p>Depois, compile o projeto e inicie o servidor Spring Boot com os comandos abaixo:</p>
+<p>Em seguida, execute os comandos abaixo separadamente:</p>
 
-<pre><code>mvn clean install
-mvn spring-boot:run
-</code></pre>
+<ol>
+  <li>
+    <strong>Compile o projeto:</strong>
+    <pre><code>mvn clean install</code></pre>
+  </li>
+  <li>
+    <strong>Após a compilação bem-sucedida, inicie o servidor Spring Boot:</strong>
+    <pre><code>mvn spring-boot:run</code></pre>
+  </li>
+</ol>
 
-<p>Se tudo estiver configurado corretamente, a aplicação será iniciada e você verá as mensagens do Spring no terminal.</p>
+<p>Se tudo estiver configurado corretamente, a aplicação será iniciada e você verá as mensagens de inicialização do Spring Boot no terminal.</p>
 
 <h4>4️⃣ Acessar a Aplicação</h4>
 <p>Abra seu navegador e acesse:</p>
