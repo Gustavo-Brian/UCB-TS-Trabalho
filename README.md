@@ -1,7 +1,7 @@
 <h2>Trabalho Acadêmico | Gerenciador de Funcionários</h2>
 
 <h3>⚠️ Recomendação de Sistema Operacional</h3>
-<p>Este sistema é recomendado para uso no <strong>Windows</strong>, pois o link fornecido para download do MySQL Installer é direcionado para essa plataforma, facilitando a instalação e configuração do banco de dados.</p>
+<p>Este sistema é recomendado para uso no <strong>Windows</strong>, pois os componentes utilizados foram especificados e testados principalmente nessa plataforma.</p>
 
 <h3>📝 Descrição do Projeto</h3> 
 
