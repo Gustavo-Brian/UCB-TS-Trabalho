@@ -16,7 +16,7 @@
 </ul>
 
 <h4>Instalação recomendada do MySQL</h4>
-<p>Recomendamos a instalação do <strong>MySQL Installer completo</strong>, que inclui:</p>
+<p>Recomendamos a instalação do <strong>MySQL completo</strong>, que inclui:</p>
 <ul>
   <li>MySQL Server</li>
   <li>MySQL Workbench (interface gráfica)</li>
