@@ -1,8 +1,8 @@
-package ts.t12.gestaofuncionario.funcionario.dto.request;
+package ts.tf12.gerenciamentofuncionarios.funcionario.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import ts.t12.gestaofuncionario.funcionario.entity.Funcionario;
+import ts.tf12.gerenciamentofuncionarios.funcionario.entity.Funcionario;
 
 import java.time.LocalDate;
 

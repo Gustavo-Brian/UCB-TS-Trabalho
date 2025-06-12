@@ -1,6 +1,6 @@
-package ts.t12.gestaofuncionario.funcionario.dto.response;
+package ts.tf12.gerenciamentofuncionarios.funcionario.dto.response;
 
-import ts.t12.gestaofuncionario.funcionario.entity.Funcionario;
+import ts.tf12.gerenciamentofuncionarios.funcionario.entity.Funcionario;
 
 import java.time.LocalDate;
 
