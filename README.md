@@ -91,11 +91,20 @@ server.port=porta_desejada
 <p>O Spring Boot será responsável por gerar automaticamente as tabelas no banco assim que a aplicação for executada.</p>
 
 <h4>3️⃣ Compilar e Executar o Projeto</h4>
-<p>Execute os seguintes comandos no terminal:</p>
+
+<p>Navegue até a pasta <code>backend</code> do projeto, pois é lá que está localizado o arquivo <code>pom.xml</code>. O Maven precisa estar nesse diretório para reconhecer o projeto e executá-lo corretamente.</p>
+
+<p>No terminal, execute o seguinte comando para acessar a pasta correta (ajuste conforme o caminho do seu projeto):</p>
+
+<pre><code>cd UCB-TS-Trabalho/gerenciador-funcionarios/backend</code></pre>
+
+<p>Depois, compile o projeto e inicie o servidor Spring Boot com os comandos abaixo:</p>
 
 <pre><code>mvn clean install
 mvn spring-boot:run
 </code></pre>
+
+<p>Se tudo estiver configurado corretamente, a aplicação será iniciada e você verá as mensagens do Spring no terminal.</p>
 
 <h4>4️⃣ Acessar a Aplicação</h4>
 <p>Abra seu navegador e acesse:</p>
