@@ -1,4 +1,4 @@
-<h1>Trabalho Acadêmico</h1> <h2>Gerenciador de Funcionários</h2> 
+<h2>Trabalho Acadêmico | Gerenciador de Funcionários</h2>
 
 <h3>📝 Descrição do Projeto</h3> 
 
