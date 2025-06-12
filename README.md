@@ -19,7 +19,7 @@ Este projeto foi desenvolvido com o objetivo de criar e testar um sistema web vo
 <p>Escolha a pasta onde deseja instalar o projeto no seu computador. Em seguida, abra o terminal nessa pasta e execute os comandos abaixo:</p>
 
 <pre><code>
-git clone https://github.com/Gustavo-Brian/UCB-Trabalho-Teste-Software.git
+git clone https://github.com/Gustavo-Brian/UCB-TS-Trabalho.git
 cd UCB-TS-Trabalho
 </code></pre>
 
