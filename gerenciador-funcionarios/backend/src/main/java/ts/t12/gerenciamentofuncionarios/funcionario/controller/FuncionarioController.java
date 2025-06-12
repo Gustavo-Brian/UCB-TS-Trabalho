@@ -16,7 +16,6 @@ public class FuncionarioController {
     private final FuncionarioService service;
 
     public FuncionarioController(FuncionarioService service) {
-        super();
         this.service = service;
     }
 
@@ -37,32 +36,23 @@ public class FuncionarioController {
         return ResponseEntity.status(201).body(service.cadastrar(request));
     }
 
-<<<<<<< HEAD
     @PutMapping("/{id}")
     public ResponseEntity<ConsultarFuncionarioResponse> atualizar(
             @PathVariable Long id,
             @RequestBody @Valid AtualizarFuncionarioRequest request) {
 
         ConsultarFuncionarioResponse response = service.atualizar(id, request);
-
         if (response == null) {
             return ResponseEntity.notFound().build();
         }
-
         return ResponseEntity.ok(response);
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletar(@PathVariable Long id) {
-        if(service.deletar(id)) {
+        if (service.deletar(id)) {
             return ResponseEntity.noContent().build();
         }
-
         return ResponseEntity.notFound().build();
-=======
-    @PutMapping("{id}")
-    public ResponseEntity<ConsultarFuncionarioResponse> atualizar(@PathVariable Long id, @RequestBody @Valid AtualizarFuncionarioRequest request) {
-        return ResponseEntity.status(201).body(service.altualizar(id, request));
->>>>>>> 6821171011a635a4f931936bb1d8a61fdb295cf3
     }
 }
