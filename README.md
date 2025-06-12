@@ -50,6 +50,8 @@ ou externo, um programa operável ou um arquivo em lotes.</code></pre>
 
 <pre><code>setx PATH "%PATH%;C:\Program Files\MySQL\MySQL Server 8.0\bin"</code></pre>
 
+<p>Após isso, feche e abra novamente o Prompt de Comando para que o sistema reconheça a nova configuração do PATH.</p>
+
 <p>Após executar, feche e reabra o terminal para a alteração ter efeito. Em seguida, tente novamente:</p>
 
 <pre><code>mysql -u root -p</code></pre>
