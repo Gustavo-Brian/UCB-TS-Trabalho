@@ -35,7 +35,7 @@
 
 <pre><code>mysql -u root -p</code></pre>
 
-<p>Se o comando funcionar, digite sua senha quando solicitado e pule para a seção <strong>2️⃣ Criando o banco de dados</strong>.</p>
+<p>Se o comando funcionar, digite sua senha quando solicitado e pule para a seção <strong>3️⃣ Criando o banco de dados</strong>.</p>
 
 <h4>❗ Caso receba o erro abaixo:</h4>
 
@@ -44,7 +44,7 @@ ou externo, um programa operável ou um arquivo em lotes.</code></pre>
 
 <p>Isso significa que o MySQL não está configurado no PATH do sistema, e o terminal não consegue encontrar o comando.</p>
 
-<h4>3️⃣ Adicionando MySQL ao PATH via terminal</h4>
+<h4>2️⃣ Adicionando MySQL ao PATH via terminal</h4>
 
 <p>Para resolver isso, execute o seguinte comando no mesmo terminal (atenção ao caminho, adapte caso seu MySQL esteja instalado em outro local):</p>
 
