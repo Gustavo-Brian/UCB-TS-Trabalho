@@ -54,7 +54,7 @@ ou externo, um programa operável ou um arquivo em lotes.</code></pre>
 
 <pre><code>mysql -u root -p</code></pre>
 
-<h4>4️⃣ Criando o banco de dados</h4>
+<h4>3️⃣ Criando o banco de dados</h4>
 
 <p>Depois de acessar o prompt do MySQL (indicado pelo <code>mysql&gt;</code>), crie o banco que será usado pelo projeto substituindo <code>nome_do_banco</code> pelo nome que desejar:</p>
 
