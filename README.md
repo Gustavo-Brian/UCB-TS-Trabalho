@@ -13,16 +13,14 @@ Este projeto foi desenvolvido com o objetivo de criar e testar um sistema web vo
 
 <h4>MySQL</h4>
 
-Crie um banco de dados no MySQL (sem tabelas).
+<h3>🚀 Como Rodar o Projeto</h3>
 
-<h2>🚀 Como Rodar o Projeto</h2>
-
-<h3>1️⃣ Clone o repositório</h3> <br>
+<h4>1️⃣ Clone o repositório</h4> <br>
 git clone https://github.com/Gustavo-Brian/UCB-Trabalho-Teste-Software.git
 
 cd seu-repositorio
 
-<h3>2️⃣ Configuração</h3> <br>
+<h4>2️⃣ Configuração</h4> <br>
 <strong>Configure o arquivo application.properties:</strong>
 
 spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco <br>
@@ -30,10 +28,10 @@ spring.datasource.username=username <br>
 spring.datasource.password=senha<br>
 server.port=porta
 
-<h3>3️⃣ Compilar e Executar</h3>
+<h4>3️⃣ Compilar e Executar</h4>
 
 mvn clean install<br>
 mvn spring-boot:run
 
-<h3>4️⃣ Acessando a aplicação</h3> <br>
+<h4>4️⃣ Acessando a aplicação</h4> <br>
 http://localhost:porta/...
