@@ -39,7 +39,7 @@ https://dev.mysql.com/downloads/file/?id=541637
 </p>
 
 <p>
-Durante a instalação, defina um usuário e uma senha de acesso ao banco de dados. Guarde essas informações, pois você precisará utilizá-las na configuração do projeto.
+Durante a instalação, defina um usuário e uma senha de acesso. Guarde essas informações, pois você precisará utilizá-las na configuração do projeto.
 </p>
 
 <h4>💻 Criando o banco de dados via terminal</h4>
