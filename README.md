@@ -19,7 +19,7 @@ Este projeto foi desenvolvido com o objetivo de criar e testar um sistema web vo
 
 <p>Escolha a pasta onde deseja instalar o projeto no seu computador.</p>
 
-<p>Abra o terminal e execute o seguinte comando para clonar o repositório:</p>
+<p>Abra o terminal na pasta escolhida e execute o seguinte comando para clonar o repositório:</p>
 
 <pre><code>
 git clone https://github.com/Gustavo-Brian/UCB-TS-Trabalho.git
