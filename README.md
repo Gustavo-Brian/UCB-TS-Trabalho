@@ -25,7 +25,7 @@ Este projeto foi desenvolvido com o objetivo de criar e testar um sistema web vo
 git clone https://github.com/Gustavo-Brian/UCB-TS-Trabalho.git
 </code></pre>
 
-<p>Após clonar, acesse a pasta do projeto com o comando:</p>
+<p>Após clonar, no mesmo terminal, acesse a pasta do projeto com o comando:</p>
 
 <pre><code>
 cd UCB-TS-Trabalho
