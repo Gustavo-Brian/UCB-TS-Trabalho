@@ -79,10 +79,6 @@ ou externo, um programa operável ou um arquivo em lotes.</code></pre>
 
 <pre><code>git clone https://github.com/Gustavo-Brian/UCB-TS-Trabalho.git</code></pre>
 
-<p>Após clonar, acesse a pasta do projeto:</p>
-
-<pre><code>cd UCB-TS-Trabalho</code></pre>
-
 <h4>2️⃣ Configurar o Projeto</h4>
 <p>Abra o arquivo <code>application.properties</code>, localizado em <code>src/main/resources/</code>, e configure-o com as credenciais do seu banco de dados MySQL:</p>
 
