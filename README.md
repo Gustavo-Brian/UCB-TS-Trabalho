@@ -41,23 +41,42 @@ Durante a instalação, defina um usuário e uma senha de acesso ao banco de dad
 
 <h4>💻 Criando o banco de dados via terminal</h4>
 
-<p>Após a instalação do MySQL, você pode criar o banco de dados via terminal com os seguintes comandos:</p>
+<p>Após instalar o MySQL (utilizando o instalador completo recomendado), você precisará criar o banco de dados que o sistema irá usar. Para isso, siga os passos abaixo com atenção:</p>
 
-<pre><code>
-mysql -u root -p
-</code></pre>
+<ol>
+  <li><strong>Abra o terminal ou prompt de comando do seu sistema operacional:</strong>
+    <ul>
+      <li>No Windows, você pode usar o <em>Prompt de Comando</em> (cmd) ou o <em>PowerShell</em>.</li>
+      <li>No Linux ou macOS, abra o <em>Terminal</em>.</li>
+    </ul>
+  </li>
+  
+  <li><strong>Conecte-se ao servidor MySQL utilizando o cliente de linha de comando:</strong>
+    <p>Digite o comando abaixo e pressione <code>Enter</code>:</p>
+    <pre><code>mysql -u root -p</code></pre>
+    <p>Esse comando conecta você ao MySQL usando o usuário <code>root</code>. Após pressionar <code>Enter</code>, será solicitada a senha que você definiu durante a instalação do MySQL. Digite a senha (não aparecerá na tela por segurança) e pressione <code>Enter</code> novamente.</p>
+  </li>
 
-<p>Depois de inserir sua senha, execute:</p>
+  <li><strong>Após acessar o prompt do MySQL (que geralmente muda para <code>mysql&gt;</code>), crie o banco de dados que será utilizado pelo projeto:</strong>
+    <p>Execute o comando abaixo, substituindo <code>nome_do_banco</code> pelo nome que você deseja dar ao banco (por exemplo, <code>funcionarios_db</code>):</p>
+    <pre><code>CREATE DATABASE nome_do_banco;</code></pre>
+  </li>
 
-<pre><code>
-CREATE DATABASE nome_do_banco;
-SHOW DATABASES;
-EXIT;
-</code></pre>
+  <li><strong>Verifique se o banco foi criado corretamente:</strong>
+    <p>Execute o comando:</p>
+    <pre><code>SHOW DATABASES;</code></pre>
+    <p>Esse comando listará todos os bancos de dados disponíveis no seu MySQL. Você deve ver o banco que acabou de criar listado aqui.</p>
+  </li>
 
-<hr>
+  <li><strong>Saia do prompt do MySQL:</strong>
+    <p>Digite o comando abaixo para voltar ao terminal normal:</p>
+    <pre><code>EXIT;</code></pre>
+  </li>
+</ol>
 
-<h3>🚀 Como Rodar o Projeto</h3>
+<p><strong>Pronto!</strong> Agora o banco de dados está criado e você pode configurá-lo no arquivo <code>application.properties</code> do seu projeto, conforme explicado na seção de configuração.</p>
+
+<p><em>Obs.: Esses comandos são independentes da pasta onde você está no sistema operacional, pois a conexão com o MySQL é feita via rede local, e o cliente de terminal do MySQL funciona em qualquer diretório.</em></p>
 
 <h4>1️⃣ Clonar o Repositório</h4>
 
