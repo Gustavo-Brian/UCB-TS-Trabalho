@@ -96,7 +96,9 @@ Navegue até a pasta <code>backend</code> do projeto, onde está localizado o ar
 É essencial que o terminal esteja apontando para esse diretório, pois o Maven precisa encontrar esse arquivo para compilar e executar corretamente a aplicação.
 </p>
 
-<p>No terminal, execute o comando abaixo para acessar a pasta correta (ajuste conforme o caminho do seu projeto):</p>
+<p>
+No terminal, com ele aberto na pasta onde está localizado o diretório <code>UCB-TS-Trabalho</code>, execute o comando abaixo para navegar até a pasta correta (ajuste o caminho conforme a localização do seu projeto):
+</p>
 
 <pre><code>cd UCB-TS-Trabalho/gerenciador-funcionarios/backend</code></pre>
 
