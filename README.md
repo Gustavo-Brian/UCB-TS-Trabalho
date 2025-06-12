@@ -1,6 +1,4 @@
-<h1>Trabalho Acadêmico - EM PRODUÇÃO</h1> 
-
-<h2>Gerenciador de Funcionários</h2> 
+<h1>Trabalho Acadêmico</h1> <h2>Gerenciador de Funcionários</h2> 
 
 <h3>📝 Descrição do Projeto</h3> 
 
