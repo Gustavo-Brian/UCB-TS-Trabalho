@@ -1,5 +1,8 @@
 <h2>Trabalho Acadêmico | Gerenciador de Funcionários</h2>
 
+<h3>⚠️ Recomendação de Plataforma</h3>
+<p>Este sistema é recomendado para uso no <strong>Windows</strong>, pois o link fornecido para download do MySQL Installer é direcionado para essa plataforma, facilitando a instalação e configuração do banco de dados.</p>
+
 <h3>📝 Descrição do Projeto</h3> 
 
 <p>
