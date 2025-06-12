@@ -1,9 +1,8 @@
-package ts.t12.gestaofuncionario.funcionario.dto.response;
+package ts.t12.gerenciamentofuncionarios.funcionario.dto.response;
 
-import ts.t12.gestaofuncionario.funcionario.entity.Funcionario;
+import ts.t12.gerenciamentofuncionarios.funcionario.entity.Funcionario;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public record ConsultarFuncionariosResponse(List<ConsultarFuncionarioResponse> funcionarios) {
 
