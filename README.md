@@ -32,10 +32,10 @@ https://dev.mysql.com/downloads/file/?id=541637
 </a>
 </p>
 
-<p>Durante a instalação, defina uma senha para o usuário <code>root</code> e guarde-a, pois você usará na configuração do projeto.</p>
+<p>Durante a instalação, defina seu usário e uma senha e guarde-os, pois você usará na configuração do projeto.</p>
 
 <h4>💻 Criando o banco de dados via terminal</h4>
-<p>Após a instalação do MySQL Server, você pode criar o banco de dados via terminal com os seguintes comandos:</p>
+<p>Após a instalação do MySQL, você pode criar o banco de dados via terminal com os seguintes comandos:</p>
 
 <pre><code>
 mysql -u root -p
