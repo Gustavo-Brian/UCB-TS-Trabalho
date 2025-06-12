@@ -50,9 +50,7 @@ ou externo, um programa operável ou um arquivo em lotes.</code></pre>
 
 <pre><code>setx PATH "%PATH%;C:\Program Files\MySQL\MySQL Server 8.0\bin"</code></pre>
 
-<p>Após executar, feche e reabra o terminal para a alteração ter efeito. Em seguida, tente novamente:</p>
-
-<pre><code>mysql -u root -p</code></pre>
+<p>Após executar, feche o terminal. Em seguida, volte para a seção <strong>1️⃣ Tente acessar o MySQL via terminal</strong>.
 
 <h4>3️⃣ Criando o banco de dados</h4>
 
