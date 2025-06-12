@@ -50,7 +50,7 @@ ou externo, um programa operável ou um arquivo em lotes.</code></pre>
 
 <pre><code>setx PATH "%PATH%;C:\Program Files\MySQL\MySQL Server 8.0\bin"</code></pre>
 
-<p>Após executar, feche o terminal. Em seguida, volte para a seção <strong>1️⃣ Tente acessar o MySQL via terminal</strong>.
+<p>Após executar, feche o terminal. Em seguida, volte para a seção <strong>1️⃣ Tente acessar o MySQL via terminal</strong>.</p>
 
 <h4>3️⃣ Criando o banco de dados</h4>
 
@@ -73,8 +73,8 @@ ou externo, um programa operável ou um arquivo em lotes.</code></pre>
 <h3>🚀 Como Rodar o Projeto</h3>
 
 <h4>1️⃣ Clonar o Repositório</h4>
-<p>Escolha a pasta onde deseja instalar o projeto no seu computador.</p>
-<p>Abra o terminal na pasta escolhida e execute o comando para clonar o repositório:</p>
+<p>Escolha o diretório onde deseja instalar o projeto no seu computador.</p>
+<p>Abra o terminal no diretório escolhido e execute o comando para clonar o repositório:</p>
 
 <pre><code>git clone https://github.com/Gustavo-Brian/UCB-TS-Trabalho.git</code></pre>
 
@@ -92,12 +92,12 @@ server.port=porta_desejada
 <h4>3️⃣ Compilar e Executar o Projeto</h4>
 
 <p>
-Navegue até a pasta <code>backend</code> do projeto, onde está localizado o arquivo <code>pom.xml</code>. 
+Navegue até o diretório <code>backend</code> do projeto, onde está localizado o arquivo <code>pom.xml</code>. 
 É essencial que o terminal esteja apontando para esse diretório, pois o Maven precisa encontrar esse arquivo para compilar e executar corretamente a aplicação.
 </p>
 
 <p>
-No terminal, com ele aberto no diretório onde está localizado o diretório <code>UCB-TS-Trabalho</code>, execute o comando abaixo para navegar até a pasta correta (ajuste o caminho conforme a localização do seu projeto):
+No terminal, com ele aberto no diretório onde está localizado o diretório <code>UCB-TS-Trabalho</code>, execute o comando abaixo para navegar até o diretório correto (ajuste o caminho conforme a localização do seu projeto):
 </p>
 
 <pre><code>cd UCB-TS-Trabalho/gerenciador-funcionarios/backend</code></pre>
