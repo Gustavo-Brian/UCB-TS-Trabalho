@@ -5,7 +5,7 @@
 Este projeto foi desenvolvido com o objetivo de criar e testar um sistema web voltado à **gestão de funcionários**. Utilizando tecnologias como **Java (Spring Boot)**, **JavaScript (React)** e **MySQL**, a aplicação permite total manipulação de dados de funcionários, como: **cadastro, edição, visualização e exclusão de dados**, integrando funcionalidades com um plano de testes bem definido. A proposta busca **facilitar processos manuais**, melhorar a visualização de dados e melhorar a **eficiência operacional**.
 
 
-🛠 Pré-requisitos Antes de rodar o projeto, certifique-se de ter instalado:
+<h3>🛠 Pré-requisitos Antes de rodar o projeto, certifique-se de ter instalado:</h3>
 
 <h4>Java 17+</h4>
 
