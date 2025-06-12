@@ -20,7 +20,7 @@ Este projeto foi desenvolvido com o objetivo de criar e testar um sistema web vo
 
 <pre><code>
 git clone https://github.com/Gustavo-Brian/UCB-Trabalho-Teste-Software.git
-cd UCB-Trabalho-Teste-Software
+cd UCB-TS-Trabalho
 </code></pre>
 
 <h4>2️⃣ Configuração</h4> <br>
