@@ -54,11 +54,11 @@ ou externo, um programa operável ou um arquivo em lotes.</code></pre>
 
 <h4>3️⃣ Criando o banco de dados</h4>
 
-<p>Depois de acessar o prompt do MySQL (indicado pelo <code>mysql&gt;</code>), crie o banco que será usado pelo projeto substituindo <code>nome_do_banco</code> pelo nome que desejar:</p>
+<p>Depois de acessar o prompt do MySQL (indicado por <code>mysql&gt;</code>), crie o banco que será usado pelo projeto substituindo <code>nome_do_banco</code> pelo nome que desejar:</p>
 
 <pre><code>CREATE DATABASE nome_do_banco;</code></pre>
 
-<p>Para conferir se o banco foi criado, execute:</p>
+<p>Para conferir se o banco foi criado corretamente, execute:</p>
 
 <pre><code>SHOW DATABASES;</code></pre>
 
@@ -66,7 +66,7 @@ ou externo, um programa operável ou um arquivo em lotes.</code></pre>
 
 <pre><code>EXIT;</code></pre>
 
-<p>Agora você pode configurar o projeto para usar esse banco, conforme explicado na seção <strong>Configurar o Projeto</strong>.</p>
+<p><strong>🔒 Guarde o nome do banco de dados que você criou</strong>. Ele será necessário na próxima etapa, onde configuraremos o projeto para se conectar a esse banco.</p>
 
 <hr>
 
