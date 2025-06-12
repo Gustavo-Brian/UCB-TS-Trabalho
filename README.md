@@ -9,10 +9,10 @@
 <h3>🛠 Pré-requisitos</h3>
 <p>Antes de rodar o projeto, certifique-se de ter os seguintes itens instalados em sua máquina:</p>
 <ul>
-  <li><strong>Java 17 ou superior</strong></li>
-  <li><strong>Maven 3 ou superior</strong></li>
-  <li><strong>MySQL</strong></li>
-  <li><strong>Git</strong> (necessário para clonar o repositório)</li>
+  <li><strong>Java 17 ou superior</strong> – <a href="https://www.oracle.com/java/technologies/downloads/#jdk17-windows" target="_blank" rel="noopener noreferrer">https://www.oracle.com/java/technologies/downloads/#jdk17-windows</a></li>
+  <li><strong>Maven 3 ou superior</strong> – <a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener noreferrer">https://maven.apache.org/download.cgi</a></li>
+  <li><strong>MySQL</strong> – <a href="https://dev.mysql.com/downloads/file/?id=541637" target="_blank" rel="noopener noreferrer">https://dev.mysql.com/downloads/file/?id=541637</a> (instalador completo recomendado)</li>
+  <li><strong>Git</strong> – <a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">https://git-scm.com/downloads</a></li>
 </ul>
 
 <h4>Instalação recomendada do MySQL</h4>
@@ -23,8 +23,7 @@
   <li>MySQL Shell</li>
   <li>Ferramentas de linha de comando</li>
 </ul>
-<p>📥 Baixe o instalador completo aqui:<br>
-<a href="https://dev.mysql.com/downloads/file/?id=541637" target="_blank" rel="noopener noreferrer">https://dev.mysql.com/downloads/file/?id=541637</a></p>
+
 <p>Durante a instalação, defina um usuário e uma senha de acesso. Guarde essas informações, pois você precisará utilizá-las na configuração do projeto.</p>
 
 <h3>💻 Criando o banco de dados via terminal</h3>
