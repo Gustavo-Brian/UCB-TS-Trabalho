@@ -97,7 +97,7 @@ Navegue até a pasta <code>backend</code> do projeto, onde está localizado o ar
 </p>
 
 <p>
-No terminal, com ele aberto na pasta onde está localizado o diretório <code>UCB-TS-Trabalho</code>, execute o comando abaixo para navegar até a pasta correta (ajuste o caminho conforme a localização do seu projeto):
+No terminal, com ele aberto no diretório onde está localizado o diretório <code>UCB-TS-Trabalho</code>, execute o comando abaixo para navegar até a pasta correta (ajuste o caminho conforme a localização do seu projeto):
 </p>
 
 <pre><code>cd UCB-TS-Trabalho/gerenciador-funcionarios/backend</code></pre>
