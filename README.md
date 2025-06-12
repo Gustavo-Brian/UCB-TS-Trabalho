@@ -15,10 +15,13 @@ Este projeto foi desenvolvido com o objetivo de criar e testar um sistema web vo
 
 <h3>🚀 Como Rodar o Projeto</h3>
 
-<h4>1️⃣ Clone o repositório</h4> <br>
-git clone https://github.com/Gustavo-Brian/UCB-Trabalho-Teste-Software.git
+<h4>1️⃣ Clone o Repositório</h4>
+<p>Escolha a pasta onde deseja instalar o projeto no seu computador. Em seguida, abra o terminal nessa pasta e execute os comandos abaixo:</p>
 
-cd seu-repositorio
+<pre><code>
+git clone https://github.com/Gustavo-Brian/UCB-Trabalho-Teste-Software.git
+cd UCB-Trabalho-Teste-Software
+</code></pre>
 
 <h4>2️⃣ Configuração</h4> <br>
 <strong>Configure o arquivo application.properties:</strong>
