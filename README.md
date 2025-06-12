@@ -12,6 +12,7 @@
   <li><strong>Java 17 ou superior</strong></li>
   <li><strong>Maven 3 ou superior</strong></li>
   <li><strong>MySQL</strong></li>
+  <li><strong>Git</strong> (necessário para clonar o repositório)</li>
 </ul>
 
 <h4>Instalação recomendada do MySQL</h4>
