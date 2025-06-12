@@ -125,7 +125,7 @@ Navegue até a pasta <code>backend</code> do projeto, onde está localizado o ar
 
 <h3>📌 Considerações Finais</h3>
 <ul>
-  <li>Este projeto foi desenvolvido com foco acadêmico e visa demonstrar boas práticas de desenvolvimento com testes automatizados e arquitetura em camadas.</li>
-  <li>Ele oferece uma base sólida para a construção de sistemas reais de gestão de funcionários.</li>
-  <li>É possível expandi-lo com recursos como autenticação de usuários, relatórios personalizados, integrações externas, entre outros.</li>
+  <li>Este projeto foi desenvolvido com foco acadêmico e visa demonstrar boas práticas de desenvolvimento com testes e arquitetura em camadas.</li>
+  <li>Ele oferece uma base para a construção de sistemas reais de gestão de funcionários.</li>
+  <li>O projeto foi desenvolvido de forma modular, permitindo que o backend (API) e o frontend sejam utilizados de forma independente. Isso facilita futuras expansões, integrações ou substituições de tecnologias em cada camada.</li>
 </ul>
