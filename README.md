@@ -11,7 +11,7 @@
 <ul>
   <li><strong>Java 17+</strong></li>
   <li><strong>Maven 3+</strong></li>
-  <li><strong>MySQL Server</strong></li>
+  <li><strong>MySQL</strong></li>
 </ul>
 
 <h4>Instalação recomendada do MySQL</h4>
