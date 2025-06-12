@@ -47,12 +47,7 @@ Durante a instalação, defina um usuário e uma senha de acesso. Guarde essas i
 <p>Após instalar o MySQL (utilizando o instalador completo recomendado), você precisará criar o banco de dados que o sistema irá usar. Para isso, siga os passos abaixo com atenção:</p>
 
 <ol>
-  <li><strong>Abra o terminal ou prompt de comando do seu sistema operacional:</strong>
-    <ul>
-      <li>No Windows, você pode usar o <em>Prompt de Comando</em> (cmd) ou o <em>PowerShell</em>.</li>
-      <li>No Linux ou macOS, abra o <em>Terminal</em>.</li>
-    </ul>
-  </li>
+  <li><strong>Abra o Prompt de Comando ou PowerShell no Windows:</strong></li>
   
   <li><strong>Conecte-se ao servidor MySQL utilizando o cliente de linha de comando:</strong>
     <p>Digite o comando abaixo e pressione <code>Enter</code>:</p>
