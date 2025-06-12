@@ -117,6 +117,8 @@ No terminal, com ele aberto no diretório onde está localizado o diretório <co
 
 <p>Se tudo estiver configurado corretamente, a aplicação será iniciada e você verá as mensagens de inicialização do Spring Boot no terminal.</p>
 
+<p><strong>Atenção:</strong> Caso você feche o terminal que está executando o servidor, a aplicação será encerrada automaticamente, pois o servidor depende da sessão ativa do terminal para continuar em execução.</p>
+
 <h4>4️⃣ Acessar a Aplicação</h4>
 <p>Abra seu navegador e acesse:</p>
 
