@@ -1,4 +1,4 @@
-package ts.t12.gerenciamentofuncionarios.funcionario.entity;
+package ts.tf12.gerenciadorfuncionarios.funcionario.entity;
 
 import jakarta.persistence.*;
 

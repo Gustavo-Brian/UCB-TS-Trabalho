@@ -1,13 +1,13 @@
-package ts.t12.gerenciamentofuncionarios.funcionario.controller;
+package ts.tf12.gerenciadorfuncionarios.funcionario.controller;
 
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ts.t12.gerenciamentofuncionarios.funcionario.dto.request.AtualizarFuncionarioRequest;
-import ts.t12.gerenciamentofuncionarios.funcionario.dto.request.CadastrarFuncionarioRequest;
-import ts.t12.gerenciamentofuncionarios.funcionario.dto.response.ConsultarFuncionarioResponse;
-import ts.t12.gerenciamentofuncionarios.funcionario.dto.response.ConsultarFuncionariosResponse;
-import ts.t12.gerenciamentofuncionarios.funcionario.service.FuncionarioService;
+import ts.tf12.gerenciadorfuncionarios.funcionario.dto.request.AtualizarFuncionarioRequest;
+import ts.tf12.gerenciadorfuncionarios.funcionario.dto.request.CadastrarFuncionarioRequest;
+import ts.tf12.gerenciadorfuncionarios.funcionario.dto.response.ConsultarFuncionarioResponse;
+import ts.tf12.gerenciadorfuncionarios.funcionario.dto.response.ConsultarFuncionariosResponse;
+import ts.tf12.gerenciadorfuncionarios.funcionario.service.FuncionarioService;
 
 @RestController
 @RequestMapping("/funcionarios")

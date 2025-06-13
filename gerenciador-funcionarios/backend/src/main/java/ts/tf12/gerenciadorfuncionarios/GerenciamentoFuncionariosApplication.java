@@ -1,4 +1,4 @@
-package ts.t12.gerenciamentofuncionarios;
+package ts.tf12.gerenciadorfuncionarios;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

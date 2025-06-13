@@ -14,7 +14,7 @@
     </parent>
 
     <groupId>ts.t12</groupId>
-    <artifactId>gestao-funcionario</artifactId>
+    <artifactId>gerenciador-funcionarios</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gestao-funcionario</name>
     <description>gestao-funcionario</description>

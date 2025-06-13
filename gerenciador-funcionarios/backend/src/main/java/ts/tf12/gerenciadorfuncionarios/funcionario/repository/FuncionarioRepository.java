@@ -1,7 +1,7 @@
-package ts.t12.gerenciamentofuncionarios.funcionario.repository;
+package ts.tf12.gerenciadorfuncionarios.funcionario.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ts.t12.gerenciamentofuncionarios.funcionario.entity.Funcionario;
+import ts.tf12.gerenciadorfuncionarios.funcionario.entity.Funcionario;
 
 import java.util.Optional;
 

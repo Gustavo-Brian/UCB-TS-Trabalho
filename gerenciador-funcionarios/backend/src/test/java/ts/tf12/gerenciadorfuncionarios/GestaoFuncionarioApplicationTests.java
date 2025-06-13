@@ -1,4 +1,4 @@
-package ts.t12.gerenciamentofuncionarios;
+package ts.tf12.gerenciadorfuncionarios;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
