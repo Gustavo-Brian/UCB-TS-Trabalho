@@ -1,0 +1,121 @@
+/* src/styles/layout.css (ou seu arquivo de CSS principal) */
+
+/* Faz o body ocupar a altura total da janela, resetando margens e paddings padrão */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Importante: Remove a barra de rolagem do body/html */
+}
+
+nav {
+  margin-right: 30px;
+}
+
+/* Container principal para o layout de altura total */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Garante que o container ocupe 100% da altura da viewport */
+  /* Remove min-height aqui, pois height: 100vh já define a altura */
+}
+
+/* Cabeçalho fixo no topo */
+.layout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 10px 20px;
+  color: #fff;
+  /* PROPRIEDADES PARA FIXAR NO TOPO */
+  position: fixed; /* Fixa o elemento na viewport */
+  top: 0;          /* Alinha ao topo */
+  left: 0;         /* Alinha à esquerda */
+  width: 100%;     /* Ocupa 100% da largura */
+  z-index: 1000;   /* Garante que fique acima de outros elementos */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para destacar */
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.layout-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px; /* Adicionado padding para melhor área de clique */
+  border-radius: 4px;
+}
+
+.layout-link:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.1); /* Efeito hover suave */
+}
+
+/* Rodapé fixo na base */
+.layout-footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  /* PROPRIEDADES PARA FIXAR NA BASE */
+  position: fixed;   /* Fixa o elemento na viewport */
+  bottom: 0;         /* Alinha à base */
+  left: 0;           /* Alinha à esquerda */
+  width: 100%;       /* Ocupa 100% da largura */
+  z-index: 1000;     /* Garante que fique acima de outros elementos */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Sombra para destacar */
+}
+
+/* Main vai crescer para ocupar o espaço disponível e será rolável */
+.app-main {
+  flex: 1; /* Permite que o main ocupe o espaço restante */
+  overflow-y: auto; /* IMPORTANTE: Adiciona a barra de rolagem vertical apenas aqui */
+  /* Adiciona padding para evitar que o conteúdo se sobreponha ao header e footer fixos */
+  padding-top: 60px; /* Ajuste este valor de acordo com a altura do seu cabeçalho */
+  padding-bottom: 50px; /* Ajuste este valor de acordo com a altura do seu rodapé */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Opcional: Estilo básico para a rolagem */
+.app-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.app-main::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.app-main::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.app-main::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.layout-header {
+  /* Seu estilo atual */
+}
+
+.layout-link {
+  /* Seu estilo atual dos links */
+  text-decoration: none;
+  color: inherit;
+  margin-right: 1rem;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  margin-left: 1rem;
+}

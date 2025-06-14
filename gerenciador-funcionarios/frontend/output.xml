@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.3 on win32)" generated="2025-06-13T23:14:26.650397" rpa="false" schemaversion="5">
+<suite id="s1" name="Tabela Funcionario" source="c:\Users\johnr\Desktop\tds\UCB-TS-Trabalho\gerenciador-funcionarios\frontend\frontend\robot-tests\login\tabela_funcionario.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-06-13T23:14:26.922466" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-13T23:14:26.922144" elapsed="1.347103"/>
+</kw>
+<test id="s1-t1" name="Verificar Botao Inativar Desabilitado Para Funcionarios Inativos" line="38">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-06-13T23:14:28.271234" level="INFO">Opening url 'http://localhost:3000/gestao-funcionarios'</msg>
+<arg>${TABELA_FUNCIONARIOS_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-06-13T23:14:28.270603" elapsed="0.524879"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-06-13T23:14:28.797173" level="INFO">Executing JavaScript:
+window.localStorage.setItem("jwt_token", "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huam9obiIsImlhdCI6MTc0OTg2NjI1NywiZXhwIjoxNzQ5OTUyNjU3fQ.V1cIn8WSXQH-105Sc9A9mW4dEkZ-y63PtzMaDjs_P8o");
+Without any arguments.</msg>
+<arg>window.localStorage.setItem("jwt_token", "${TOKEN}");</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-06-13T23:14:28.796158" elapsed="0.009293"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2025-06-13T23:14:28.806191" elapsed="0.063694"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROW_XPATH}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-13T23:14:28.870434" elapsed="0.221803"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-06-13T23:14:29.100379" level="INFO">${rows} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="7730aee340623f395a6908ba267f8d8a", element="f.19880F1DDB83ECDDAB3F2038A15B6327.d.9DC4CCBC7364059E28DCCCE83516FB3E.e.7")&gt;, &lt;selenium.webdrive...</msg>
+<var>${rows}</var>
+<arg>${ROW_XPATH}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-06-13T23:14:29.093028" elapsed="0.007609"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-06-13T23:14:29.102137" level="FAIL">Keyword 'SeleniumLibrary.Get WebElement' expected 1 argument, got 2.</msg>
+<var>${cell}</var>
+<arg>xpath=.//td[4]</arg>
+<arg>element=${row}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="FAIL" start="2025-06-13T23:14:29.101855" elapsed="0.001120">Keyword 'SeleniumLibrary.Get WebElement' expected 1 argument, got 2.</status>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<var>${status}</var>
+<arg>return arguments[0].textContent.trim();</arg>
+<arg>${cell}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-06-13T23:14:29.103298" elapsed="0.000152"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${status}' == 'Inativo'</arg>
+<arg>Verificar Botao Inativar Disabled</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-06-13T23:14:29.103665" elapsed="0.000148"/>
+</kw>
+<var name="${row}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7730aee340623f395a6908ba267f8d8a", element="f.19880F1DDB83ECDDAB3F2038A15B6327.d.9DC4CCBC7364059E28DCCCE83516FB3E.e.7")&gt;</var>
+<status status="FAIL" start="2025-06-13T23:14:29.101648" elapsed="0.002430">Keyword 'SeleniumLibrary.Get WebElement' expected 1 argument, got 2.</status>
+</iter>
+<var>${row}</var>
+<value>@{rows}</value>
+<status status="FAIL" start="2025-06-13T23:14:29.101209" elapsed="0.003227">Keyword 'SeleniumLibrary.Get WebElement' expected 1 argument, got 2.</status>
+</for>
+<doc>Verifica se o botão "Inativar" está desabilitado para funcionários já inativos.</doc>
+<status status="FAIL" start="2025-06-13T23:14:28.269572" elapsed="0.835582">Keyword 'SeleniumLibrary.Get WebElement' expected 1 argument, got 2.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-13T23:14:29.107447" elapsed="2.235929"/>
+</kw>
+<status status="FAIL" start="2025-06-13T23:14:26.655380" elapsed="4.688417"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tabela Funcionario" id="s1" pass="0" fail="1" skip="0">Tabela Funcionario</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
