@@ -126,6 +126,60 @@ No terminal, com ele aberto no diretório onde está localizado o diretório <co
 
 <hr>
 
+<h3>🚀 Roteiro de Instalação e Execução do Projeto Frontend</h3>
+
+<h4>📝 Passo 1️⃣ — Instalar o Node.js (se ainda não tiver)</h4>
+<p>1. Acesse: <a href="https://nodejs.org" target="_blank">https://nodejs.org</a></p>
+<p>2. Baixe a versão <strong>LTS</strong> e instale.</p>
+<p>✅ Após instalar, verifique no terminal/cmd:</p>
+<pre><code>node -v
+npm -v</code></pre>
+<p>Se os comandos funcionarem, vá direto para o <strong>Passo 3️⃣</strong>.</p>
+<p>❗ Caso apareça "comando desconhecido", siga para o <strong>Passo 2️⃣</strong> para configurar as variáveis de ambiente.</p>
+
+<h4>📝 Passo 2️⃣ — Configurar variáveis de ambiente (Windows)</h4>
+<p>1. Vá em <strong>Painel de Controle &gt; Sistema &gt; Configurações Avançadas do Sistema &gt; Variáveis de Ambiente</strong></p>
+<p>2. Em <strong>Path</strong>, adicione o caminho onde o Node.js foi instalado (normalmente):</p>
+<pre><code>C:\Program Files\nodejs\</code></pre>
+<p>3. Feche e abra o terminal novamente.</p>
+<p>4. Volte ao <strong>Passo 1️⃣</strong> e verifique novamente com:</p>
+<pre><code>node -v
+npm -v</code></pre>
+
+<h4>📝 Passo 3️⃣ — Instalar e rodar o projeto</h4>
+<p>1. Navegue até o diretório <code>frontend</code> do projeto (onde está o arquivo <code>package-lock.json</code>).</p>
+<p>2. Execute:</p>
+<pre><code>npm install</code></pre>
+<p>❗ Se der erro, verifique se o Node está instalado corretamente com:</p>
+<pre><code>npm -v</code></pre>
+<p>Se o <code>npm</code> não estiver instalado, refaça o <strong>Passo 2️⃣</strong>.</p>
+<p>3. Para iniciar o projeto:</p>
+<pre><code>npm start</code></pre>
+<p>Por padrão, o servidor será iniciado na porta <strong>3000</strong>.</p>
+
+<h4>⚠️ Caso a porta 3000 já esteja em uso</h4>
+<p>Você pode:</p>
+<ul>
+  <li>Finalizar o processo que está usando a porta 3000</li>
+  <li><strong>OU</strong> criar um arquivo <code>.env</code> para definir uma nova porta</li>
+</ul>
+
+<h4>Como criar o <code>.env</code></h4>
+<p>1. Na raiz do projeto (onde está o <code>package.json</code>), crie um arquivo chamado:</p>
+<pre><code>.env</code></pre>
+<p>2. Adicione dentro dele:</p>
+<pre><code>PORT=3001</code></pre>
+<p>(Troque <code>3001</code> pela porta que quiser.)</p>
+<p>3. Salve o arquivo.</p>
+<p>4. Rode novamente:</p>
+<pre><code>npm start</code></pre>
+
+<h4>4️⃣ Acessar a Aplicação</h4>
+<p>Abra seu navegador e acesse:</p>
+
+<pre><code>http://localhost:porta/</code></pre>
+
+<hr>
 <h3>📌 Considerações Finais</h3>
 <ul>
   <li>Este projeto foi desenvolvido com foco acadêmico e visa demonstrar boas práticas de desenvolvimento com testes e arquitetura em camadas.</li>
